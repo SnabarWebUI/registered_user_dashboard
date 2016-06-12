@@ -12,7 +12,7 @@ export default class TableRow extends React.Component {
     render() {
         console.log("props of table row : ", this.props)
         return (
-            <div>
+            <tbody>
                 {this.props.item.map((value,i)=>{
                     return(
                     <tr key={i}>
@@ -22,7 +22,7 @@ export default class TableRow extends React.Component {
                     </tr>
                     )
                 })}
-            </div>
+            </tbody>
         )
     }
 }

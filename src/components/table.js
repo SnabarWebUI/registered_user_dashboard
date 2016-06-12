@@ -5,18 +5,31 @@
 import React from 'react'
 import {Table} from 'react-bootstrap'
 import TableRow from './TableRow'
+import * as axios from 'axios'
 
 export default class RecordTable extends React.Component {
-    render(){
-        const row = [{
-            email : 'akashshinde@gmail.com',
-            created_at: '2016-06-10T03:54:11Z'
-        },
-        {
-            email : 'nikhil@gmail.com',
-            created_at: '2016-06-10T03:54:11Z'
+    constructor(props){
+        super(props)
+        this.state = {
+            row: []
         }
-        ]
+    }
+
+    componentWillMount(){
+        axios.get('http://127.0.0.1:8081/r_users')
+            .then((res) => {this.setState({row: res.data})})
+            .catch((err) => {console.log(err)})
+    }
+    
+    render(){
+        if (this.state.row.length == 0){
+            return (
+                <div>
+                    <h3>Loading</h3>
+                </div>
+            )
+        }
+
         return (
             <Table striped bordered condensed hover>
                 <thead>
@@ -26,9 +39,7 @@ export default class RecordTable extends React.Component {
                     <th>Created at</th>
                 </tr>
                 </thead>
-                <tbody>
-                    <TableRow item={row}/>
-                </tbody>
+                    <TableRow item={this.state.row}/>
             </Table>
         )
     }
