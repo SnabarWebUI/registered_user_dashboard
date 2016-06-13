@@ -25,7 +25,7 @@ export default class RecordTable extends React.Component {
         if (this.state.row.length == 0){
             return (
                 <div>
-                    <h3>Loading</h3>
+                    <h3>Loading ... </h3>
                 </div>
             )
         }
