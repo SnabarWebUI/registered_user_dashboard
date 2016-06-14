@@ -8,8 +8,8 @@ There are two methods for getting started with this repo.
 Checkout this repo, install dependencies, then start the gulp process with the following:
 
 ```
-	> git clone https://github.com/SnabarWebUI/registered_user_dashboard.git
-	> cd registered_user_dashboard
-	> npm install
-	> npm start
+	 git clone https://github.com/SnabarWebUI/registered_user_dashboard.git
+	 cd registered_user_dashboard
+	 npm install
+	 npm start
 ```
