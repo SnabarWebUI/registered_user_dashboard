@@ -5,6 +5,7 @@
 import React, {Component} from 'react';
 
 export default class Login extends Component {
+
     render(){
         return (
         <div className="login-box">
@@ -29,7 +30,7 @@ export default class Login extends Component {
                             </div>
                         </div>
                         <div className="col-xs-4">
-                            <button type="submit" className="btn btn-primary btn-block btn-flat">Sign In</button>
+                          <button type="submit" className="btn btn-primary btn-block btn-flat">Sign In</button>
                         </div>
                     </div>
                 </form>
