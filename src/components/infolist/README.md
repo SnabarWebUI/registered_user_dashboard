@@ -1,5 +1,5 @@
 #Usage
-`<title="Title" icon="fa-comment-o" number="number" colour="colour"/>`
+`<InfoBox title="Title" icon="fa-comment-o" number="number" colour="colour" />`
 
 
 #props:
