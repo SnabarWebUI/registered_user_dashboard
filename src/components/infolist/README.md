@@ -29,8 +29,6 @@
 3.icon:anyone from font awsome.
 
 
-`:EMOJICODE:`.
-:simple_smile:
 
 
 
