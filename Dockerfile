@@ -18,4 +18,5 @@ COPY . /usr/src/app
 RUN npm test
 
 EXPOSE 8082 8082
+
 CMD [ "npm", "start" ]
