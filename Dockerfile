@@ -12,6 +12,8 @@ COPY package.json /usr/src/app/
 
 RUN npm cache clean
 
+RUN rm -rf node_modules/
+
 RUN npm install
 
 # Bundle app source
