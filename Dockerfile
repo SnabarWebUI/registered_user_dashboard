@@ -14,6 +14,8 @@ RUN npm cache clean
 
 RUN rm -rf node_modules/
 
+RUN rm -rf /root/.npm/
+
 RUN npm install
 
 # Bundle app source
