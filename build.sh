@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 docker build --rm -t snabar/dashboard_component .
-docker run -d -p 8082 8082 --name snabar-dashboard-component snabar/dashboard_component
+docker run -d --name snabar-dashboard-component -p 8082:8082 snabar/dashboard_component
 
 if [ $? != 0 ]
 then
