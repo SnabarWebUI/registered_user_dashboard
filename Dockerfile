@@ -1,4 +1,4 @@
-FROM node:argon
+FROM node
 
 MAINTAINER Akash Shinde <akash@snabar.com>
 
