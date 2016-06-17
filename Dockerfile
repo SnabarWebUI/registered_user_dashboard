@@ -19,4 +19,5 @@ RUN npm test
 
 EXPOSE 8082 8082
 
+# Starting node server
 CMD [ "npm", "start" ]
