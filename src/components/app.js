@@ -5,7 +5,7 @@ import Content from './admin/content'
 import Login from './login/Login'
 import GradientBox from './box/GradientBox'
 import CircularLoading from './snabar/wizard/wizard_circle'
-import FirstStep from './snabar/wizard/steps_form/first_step'
+import ThirdStep from './snabar/wizard/steps_form/third_step'
 
 export default class App extends Component {
 
@@ -13,7 +13,7 @@ export default class App extends Component {
     return (
         <div className="row">
             <div>
-                <FirstStep />
+                <ThirdStep />
           </div>
         </div>
     );
