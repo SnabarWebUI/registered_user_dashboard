@@ -1,0 +1,36 @@
+.form-wizard {
+    margin-top: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 5%;
+    /*background-color: #ddebf0;*/
+    border: 2px solid #1cba6a;
+    height: 35px;
+    width:100px;
+    position: relative;
+    transition-duration: 1s;
+    -webkit-font-smoothing:antialiased;
+    text-align: center;
+    /*padding-top: -1px;*/
+    /*padding-top: 10px;*/
+}
+
+.form-wizard:hover {
+    background-color: #aff3d0;
+    cursor: pointer;
+}
+
+.form-wizard:hover .no {
+}
+
+.no {
+    color: #1cba6a;
+    font-size: 19px;
+    font-family: 'Raleway', sans-serif;
+    transition-duration: 1s;
+    padding-bottom: 10px;
+}
+
+body {
+    margin-top: 30px;
+}
