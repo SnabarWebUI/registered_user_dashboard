@@ -12,7 +12,7 @@ import {Col,
 export default class ThirdStep extends Component {
     render(){
         return (
-                <div>
+            <div>
                 <Header title="Bank Details" subtitle="VAT and Bank details" />
                 <hr/>
                 <Form horizontal>
@@ -25,7 +25,7 @@ export default class ThirdStep extends Component {
                     <InputBasic label="Account Name" placeholder="Bank account name" />
                     <InputBasic label="Bank IFSC Code" placeholder="Bank IFSC Code" />
                 </Form>
-                </div>
+            </div>
         )
     }
 }
