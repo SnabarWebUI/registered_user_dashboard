@@ -6,6 +6,7 @@ import Login from './login/Login'
 import GradientBox from './box/GradientBox'
 import CircularLoading from './snabar/wizard/wizard_circle'
 import CreateCategory from './snabar/category/create'
+import ThirdStep from './snabar/wizard/steps_form/third_step'
 
 export default class App extends Component {
 
@@ -13,9 +14,9 @@ export default class App extends Component {
     return (
         <div className="row">
             <div>
-                <CreateCategory />
+                <ThirdStep />
           </div>
         </div>
     );
   }
-}
+} 
