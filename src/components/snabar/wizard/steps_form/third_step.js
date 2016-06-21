@@ -13,7 +13,7 @@ import {Col,
 export default class ThirdStep extends Component {
     render(){
         return (
-            <div>
+            <div className="animated fadeIn">
                <Form horizontal>
                     <legend><i className="ion-ios-locked-outline"></i>  &nbsp; Income Tax Details </legend>
                     <InputBasic label="PAN No" placeholder="Shop PAN number" />
@@ -23,10 +23,6 @@ export default class ThirdStep extends Component {
                     <InputBasic label="Account No" placeholder="Bank account number" />
                     <InputBasic label="Account Name" placeholder="Bank account name" />
                     <InputBasic label="Bank IFSC Code" placeholder="Bank IFSC Code" />
-                    <Button name="Continue" position="center-block" bs="primary" handleClick={(e) => {
-                        e.preventDefault();
-                        alert("alert from this one")
-                    }} />
                 </Form>
             </div>
         )
