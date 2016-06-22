@@ -10,12 +10,11 @@ import CircularLoading from '../../wizard/wizard_circle'
 
 export default class FirstStep extends Component {
     render(){
-        return (
-            <div className="col-md-6">
-                <Header title="Personal Info" subtitle="Let us know about you" />
-                <hr />
-            <form action="#" className="form-horizontal">
 
+        return (
+            <div className="animated fadeIn">
+            <form action="#" className="form-horizontal">
+                <legend><i className="ion-ios-locked-outline"></i>  &nbsp; Personal Info </legend>
                 {/* Shop Name */}
                 <InputBasic label="Shop Name" placeholder="Shop name" />
 
@@ -31,7 +30,6 @@ export default class FirstStep extends Component {
                 {/* Shop Address */}
                 <InputAddress />
 
-                <input type="button" value="Next" className="btn btn-primary pull-right" />
             </form>
             </div>
         )

@@ -6,16 +6,15 @@ import React, {Component} from 'react';
 
 import Header from '../../helper/bootstrap_helper/header'
 import InputBasic from '../../helper/form_helper/InputBasic'
+import Button from './../../helper/bootstrap_helper/Button'
 import {Col,
         Form} from 'react-bootstrap'
 
 export default class ThirdStep extends Component {
     render(){
         return (
-                <div>
-                <Header title="Bank Details" subtitle="VAT and Bank details" />
-                <hr/>
-                <Form horizontal>
+            <div className="animated fadeIn">
+               <Form horizontal>
                     <legend><i className="ion-ios-locked-outline"></i>  &nbsp; Income Tax Details </legend>
                     <InputBasic label="PAN No" placeholder="Shop PAN number" />
                     <InputBasic label="VAT No" placeholder="Shop VAT no" />
@@ -25,7 +24,7 @@ export default class ThirdStep extends Component {
                     <InputBasic label="Account Name" placeholder="Bank account name" />
                     <InputBasic label="Bank IFSC Code" placeholder="Bank IFSC Code" />
                 </Form>
-                </div>
+            </div>
         )
     }
 }

@@ -23,6 +23,40 @@
 .form-wizard:hover .no {
 }
 
+.margin-top {
+    margin-top: 15px;
+}
+
+.margin-left {
+    margin-left: 15px; !important;
+}
+
+.panel {
+}
+
+/*.legend div {*/
+    /**/
+/*}*/
+
+.page-header {
+    /*font-family: 'Work Sans', sans-serif;*/
+}
+
+.panel-default .panel-heading {
+}
+
+body {
+    /*background-color: grey;*/
+}
+
+.control-label {
+}
+
+
+* {
+    border-radius: 0 !important;
+}
+
 .no {
     color: #1cba6a;
     font-size: 19px;
